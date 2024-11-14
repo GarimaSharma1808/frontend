@@ -1,0 +1,114 @@
+/* Global styles */
+* {
+  background-color: lightblue;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the About section */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  gap: 20px;
+  background-color: lightblue;
+}
+
+/* Image section */
+.image-section {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Text section */
+.text-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.text-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: brown;
+  font-family: 'Algerian', sans-serif;
+  text-align: center;
+}
+
+.text-section p {
+  font-size: 1rem;
+  color: black;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+/* Button Styling */
+.learn-more {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+  background-color: darkblue;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-section {
+    padding: 0;
+  }
+
+  .text-section {
+    padding: 0;
+  }
+
+  .text-section h2 {
+    font-size: 2rem;
+  }
+
+  .text-section p {
+    font-size: 0.9rem;
+  }
+
+  .learn-more {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-section p {
+    font-size: 0.8rem;
+  }
+}
